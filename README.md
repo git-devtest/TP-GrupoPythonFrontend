@@ -2,7 +2,6 @@
 Group Repository #22 - Commission 23533 - Python Codo a Codo 2023
 
 ## Table of Contents
-**
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [About Us](#about-us)
