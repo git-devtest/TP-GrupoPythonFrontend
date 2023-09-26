@@ -6,11 +6,11 @@ Group Repository #22 - Commission 23533 - Python Codo a Codo 2023
 2. [Technologies](#technologies)
 3. [About Us](#about-us)
 
-### General Info
+## General Info
 TP frontend repository of group 22, here we will have the different Frontend files using HTML5, CSS and JavaScript.<br>
 <em>Status: <important>DEVELOPMENT</important></em>
 
-### Screenshot
+## Screenshot
 ![LogoHTML5](https://www.w3.org/html/logo/downloads/HTML5_Logo_128.png)
 
 ## Technologies
