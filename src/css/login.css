@@ -27,8 +27,8 @@ main {
 }
 
 .image-section img {
-    max-width: 100%;
-    height: auto;
+    width: 50%;
+    height: 50%;
 }
 
 .login-section h2 {
