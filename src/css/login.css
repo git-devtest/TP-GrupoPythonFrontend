@@ -29,6 +29,7 @@ main {
 .image-section img {
     max-width: 50%;
     height: auto;
+    align-items: center;
 }
 
 .login-section h2 {
