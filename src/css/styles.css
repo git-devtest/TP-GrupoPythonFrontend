@@ -11,16 +11,13 @@ body{
 .header{
     width: 100%;
     height: 100px;
-    padding: 15px;
+    padding: 5px;
     border: 1px solid #000;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
-.header a
-{
-        margin: 0 10px;
-}
+
 
 .header div
 {
@@ -36,6 +33,7 @@ body{
     width: 100px;
     height: 100%;
     border: 1px solid #000;
+    margin: 5px;
 }
 .container{
     border: 1px solid #000;
