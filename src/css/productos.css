@@ -1,19 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Darker Grotesque', sans-serif;
 
 }
-header{
+
+header {
     display: block;
     width: 100%;
     background-color: black;
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    
+
 }
-nav{
+
+nav {
     padding-top: 1%;
     padding-bottom: 1%;
     display: grid;
@@ -22,32 +24,36 @@ nav{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-a{
+
+a {
     text-decoration: none;
     text-align: center;
     color: white;
     font-size: 1.2rem;
-    
+
 }
-a:hover{
-  
+
+a:hover {
+
     background-color: rgb(114, 114, 114);
     color: black;
     border-radius: 5px;
 }
-a:active{
+
+a:active {
     background-color: rgb(114, 114, 114);
     color: rgb(105, 115, 144);
     border-radius: 5px;
 
 }
-main{
+
+main {
     height: 70vh;
     background-image: url(../images/parking.jpg);
 }
 
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -56,4 +62,15 @@ main{
     padding: 20px;
     background-color: #000;
     color: #f2f2f2;
+}
+
+#volver {
+    
+    position: absolute;
+    top: 88%;
+    left: 1%;
+}
+footer a{
+    text-decoration: none;
+
 }
