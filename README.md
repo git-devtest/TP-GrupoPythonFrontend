@@ -23,5 +23,5 @@ A list of technologies used within the project:
 Development Team.
 > Claudio Rohr (claudiomr79 at gmail dot com) <br>
 > Diego Pozo (diegodpozo at hotmail dot com) <br>
-> Pablo Lomba (lombapablo at yahoo dot es) <br>
+> Pablo Lombardi (lombapablo at yahoo dot es) <br>
 > Jhon Harold Hincapie (jhonharold.hincapie at gmail dot com)
