@@ -1,42 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-body{
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #f2f2f2;
-}
-
-header, footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-}
-
-main {
+.login{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.image-section, .login-section {
-    flex: 1;
-    padding: 20px;
-}
-
-.image-section img {
-    max-width: 50%;
-    height: auto;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
 }
-
-.login-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 form label {
     display: block;
     margin-bottom: 5px;
@@ -61,4 +35,45 @@ button {
 
 button:hover {
     background-color: #e68a00;
+}
+@media (max-width: 800px) {
+    .login-section {
+        width: 80vw;
+        height: auto;
+    }
+    .image-section > img {
+        display: inline-block;
+        width: 50vw;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    .login-section {
+        width: 50vw;
+        height: auto;
+    }
+    .image-section > img {
+        display: inline-block;
+        width: 30vw;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .login-section {
+        width: 30vw;
+        height: auto;
+    }
+    .image-section > img {
+        display: inline-block;
+        width: 20vw;
+        height: auto;
+        align-items: center;
+        margin-bottom: 10%;
+    }
 }
