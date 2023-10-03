@@ -80,6 +80,9 @@ main{
         margin: auto;
         /* flex: 1; Ocupar espacio disponible de manera igual */
     }
+    .navItem{
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1280px) {
