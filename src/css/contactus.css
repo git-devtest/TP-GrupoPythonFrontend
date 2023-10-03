@@ -14,9 +14,6 @@ header{
  
 }
 
-nav{
-
-}
 .logo {
     width: 100px;
     height: 100px;
@@ -52,13 +49,40 @@ ul{
     font-size: 1.5rem;
 }
 
+.footer {
+    display: grid;
+grid-template-columns: auto auto;
 
-.footer{ 
-     display: flex; 
-     justify-content: center; 
-     flex-direction: column; 
-     align-items: center; 
-     padding: 20px; 
-     background-color: #000; 
-     color: #f2f2f2; 
- }
+    padding: 10px;
+    background-color: #1d1d1d;
+    color: #f2f2f2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+
+footer a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+footer img{
+
+    width: 30px;
+    height: 25px;
+}
+
+#autor{
+    grid-column-start: 2;
+    
+}
+
+#inst{
+ padding: 4%;
+ 
+}
+
+#link{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}

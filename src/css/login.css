@@ -19,6 +19,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+height: 75vh;
 }
 
 .image-section, .login-section {
@@ -61,4 +62,42 @@ button {
 
 button:hover {
     background-color: #e68a00;
+}
+
+.footer {
+    display: grid;
+grid-template-columns: auto auto;
+
+    padding: 10px;
+    background-color: #1d1d1d;
+    color: #f2f2f2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+
+footer a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+footer img{
+
+    width: 30px;
+    height: 25px;
+}
+
+#autor{
+    grid-column-start: 2;
+    
+}
+
+#inst{
+ padding: 4%;
+ 
+}
+
+#link{
+    grid-column-start: 2;
+    grid-row-start: 3;
 }
