@@ -117,37 +117,48 @@ body {
 }
 
 
+#intro{
+    padding: 1%;
+    grid-column-start: 1;
+    grid-column-end: 3;
 
+}
 
 .box1 {
     padding: 1%;
     grid-column-start: 2;
-    grid-row-start: 1;
+    grid-row-start: 2;
+    background-color: rgb(225, 228, 228);
+
 }
 
 .box2 {
     
     padding: 1%;
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 3;
 }
 
 .box3 {
     padding: 1%;
     grid-column-start: 2;
-    grid-row-start: 3;
+    grid-row-start: 4;
+    background-color: rgb(225, 228, 228);
+
 }
 
 .box4 {
     padding: 1%;
     grid-column-start: 2;
-    grid-row-start: 4;
+    grid-row-start: 5;
 }
 
 .box5 {
     padding: 1%;
     grid-column-start: 2;
-    grid-row-start: 5;
+    grid-row-start: 6;
+    background-color: rgb(225, 228, 228);
+
 }
 
 
@@ -174,6 +185,7 @@ li {
 #imgcuenta{
     height: 83%;
     width: 43%;
+
 }
 
 #imgcuenta:hover{
@@ -185,6 +197,21 @@ li {
     height: 83%;
     width: 43%;
 }
+
+#imgreserva{
+    height: 83%;
+    width: 43%;
+}
+
+#imgresumen{
+    height: 83%;
+    width: 53%;
+}
+#imgconfig{
+    height: 83%;
+    width: 53%;
+}
+
 .footer {
     display: block;
     justify-content: center;
