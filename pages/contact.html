@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
+    <style>
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-section, .contact-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+    </style>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="../src/images/parking.jpg" alt="" class="logo"></a>
+        <div>
+            <h1>Parking Services</h1>
+            <h3>Su vehículo, nuestro activo más importante</h3>
+        </div>
+    </header>
+
+    <main>
+        <section class="text-section">
+            <p>En Parking Service trabajamos para usted. 
+            Con este breve formulario usted se comunica con nosotros, y a vuelta de mensaje
+            le daremos la información correspondiente a tarifas y demás servicios que ofrecemos</p>
+        </section>
+        <section class="contact-section">
+            <h2>Formulario de Contacto</h2>
+            <form id="login-form">
+                <label for="name">Nombres:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="lastname">Apellidos:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>       
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="8" cols="58" required></textarea>
+
+                <label for="medioContacto">¿Por qué medio desea que le contactemos?</label>
+                <select id="medioContacto" name="medioContacto">
+                    <option value="email">Correo Electrónico</option>
+                    <option value="telefono">Teléfono</option>
+                    <option value="whatsapp">WhatsApp</option>
+                </select>
+                
+                <label for="terminos">Acepto los términos y condiciones</label>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <br>
+                <input type="submit" value="Enviar">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página institucional/empresarial -->
+    </footer>
+</body>
+</html>
