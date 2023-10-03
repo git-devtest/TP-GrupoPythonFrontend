@@ -108,7 +108,7 @@ body {
 
     display: grid;
     grid-template-columns: 2fr 5fr;
-    grid-row-gap: 10%;
+    grid-row-gap: 50px;
     justify-content: space-between;
     /* Alinear con espacio entre las secciones */
     align-items: center;
