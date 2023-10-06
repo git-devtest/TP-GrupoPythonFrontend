@@ -9,10 +9,38 @@
 body {
     background-color: #f2f2f2;
 }
-@media (max-width: 800px) {
+
+@media (max-width: 800px) 
+{
+
+    .header {
+        width: 100%;
+        /* height: 30px; */
+        display: block;
+        justify-content: flex-start;
+        align-items: stretch;
+   
+    }
+.header div {
+    font-size: 1.1rem;
+ 
+}
+    .navItem a {
+        text-decoration: none;
+        color: #f2f2f2; 
+
+        font-size: 1.3 rem;
+    }
+    
+    
     .container {
-        font-size: 1rem;
+        font-size: .5rem;
+        
         flex-wrap: wrap;
+
+    }
+    #intro{
+        font-size: .5rem;
     }
 
     .header h1 h2 {
@@ -24,6 +52,10 @@ body {
         height: 100%;
         border: 1px solid #000;
         float: left;
+    }
+    .img{
+        width: 35%;
+        height: 20%;
     }
 }
 
@@ -75,7 +107,7 @@ body {
 .navigation {
 
     width: 100%;
-  
+
     padding: 1%;
     border: 1px solid #000;
     background-color: #000;
@@ -90,7 +122,7 @@ body {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-   
+
 }
 
 .navItem {
@@ -117,7 +149,7 @@ body {
 }
 
 
-#intro{
+#intro {
     padding: 1%;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -133,7 +165,7 @@ body {
 }
 
 .box2 {
-    
+
     padding: 1%;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -161,7 +193,7 @@ body {
 
 }
 
-.box6{
+.box6 {
     padding: 1%;
     grid-column-start: 2;
     grid-row-start: 7;
@@ -188,70 +220,75 @@ li {
     font-size: 1.7rem;
 }
 
-#imgcuenta{
+img{
     height: 83%;
     width: 43%;
 
 }
+/* #imgcuenta {
+    height: 83%;
+    width: 43%;
 
-#imgcuenta:hover{
+} */
+
+#imgcuenta:hover {
     border: 3px solid blue;
     border-radius: 50px;
 }
 
-#imgestadistica{
+/* #imgestadistica {
     height: 83%;
     width: 43%;
 }
 
-#imgreserva{
+#imgreserva {
     height: 83%;
     width: 43%;
 }
 
-#imgresumen{
+#imgresumen {
+    height: 83%;
+    width: 43%;
+}
+
+#imgconfig {
     height: 83%;
     width: 53%;
-}
-#imgconfig{
-    height: 83%;
-    width: 53%;
-}
+} */
 
 .footer {
     display: grid;
-grid-template-columns: auto auto;
-
+    grid-template-columns: auto auto;
     padding: 10px;
     background-color: #1d1d1d;
     color: #f2f2f2;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-} 
+}
 
-footer a{
+footer a {
     font-size: 2rem;
     text-decoration: none;
     color: white;
 }
 
-footer img{
+footer img {
 
     width: 30px;
     height: 25px;
 }
 
-#autor{
+#autor {
     grid-column-start: 2;
-    
+
 }
 
-#inst{
- padding: 4%;
- 
+#inst {
+    padding: 4%;
+
 }
 
-#link{
+#link {
     grid-column-start: 2;
     grid-row-start: 3;
 }
