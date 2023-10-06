@@ -136,7 +136,8 @@ p {
     width: 100px;
 }
 
-#imgcuenta:hover{
+
+#imgcuenta:hover {
     border: 3px solid blue;
     border-radius: 50px;
 }
@@ -153,7 +154,8 @@ p {
     font-size: 1.5rem;
 } 
 
-.footer > div > a {
+footer a{
+    font-size: 2rem;
     text-decoration: none;
     color: #f2f2f2;
 }	
@@ -163,59 +165,3 @@ p {
     height: 10%;
 }
 
-#redes > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media (max-width: 800px) {
-    .container {
-        font-size: 1.3rem;
-        flex-wrap: wrap;
-    }
-
-    .header h1 h2 {
-        text-align: center;
-    }
-    .navList a{
-        font-size: 1.3rem;
-    }
-    .logo {
-        width: 100px;
-        height: 100%;
-        border: 1px solid #000;
-        float: left;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 1.3rem;
-        text-align: center;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 1280px) {
-    .container {
-        font-size: 1.5rem;
-        flex-wrap: nowrap;
-    }
-    .navList a{
-        font-size: 1.5rem;
-    }
- 
-}
-
-@media (min-width: 1280px) {
-    .container {
-        font-size: 2rem;
-        flex-wrap: nowrap;
-    }
-    .footer{
-        font-size: 2rem;
-    }
-    .navList a{
-        font-size: 2rem;
-    }
-}
-	
