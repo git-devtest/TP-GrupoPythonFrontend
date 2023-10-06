@@ -70,7 +70,6 @@ body {
     .container {
         font-size: 2rem;
         flex-wrap: nowrap;
-
     }
 }
 
@@ -105,10 +104,8 @@ body {
 }
 
 .navigation {
-
     width: 100%;
-
-    padding: 1%;
+    height: 100px;
     border: 1px solid #000;
     background-color: #000;
     color: #f2f2f2;
@@ -117,12 +114,10 @@ body {
 }
 
 .navList {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-
 }
 
 .navItem {
@@ -134,70 +129,63 @@ body {
     color: #f2f2f2;
 }
 
-
-
 .container {
-
     display: grid;
-    grid-template-columns: 2fr 5fr;
-    grid-row-gap: 50px;
-    justify-content: space-between;
-    /* Alinear con espacio entre las secciones */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 50px;
+    margin: 10%;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    /* Alinear verticalmente al centro */
-    padding: 20px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+article > img {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+article > iframe {
+    width: 80%;
+    margin-top: 5%;
 }
 
-
-#intro {
-    padding: 1%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
+#intro{
+    padding: 5%;
 }
 
-.box1 {
-    padding: 1%;
-    grid-column-start: 2;
-    grid-row-start: 2;
+#box1 {
     background-color: rgb(225, 228, 228);
-
+    padding: 5%;
 }
 
-.box2 {
-
-    padding: 1%;
-    grid-column-start: 2;
-    grid-row-start: 3;
+#box2 {
+    padding: 5%;
 }
 
-.box3 {
-    padding: 1%;
-    grid-column-start: 2;
-    grid-row-start: 4;
+#box3 {
+    padding: 5%;
     background-color: rgb(225, 228, 228);
-
 }
 
-.box4 {
-    padding: 1%;
-    grid-column-start: 2;
-    grid-row-start: 5;
+#box4 {
+    padding: 5%;
 }
 
-.box5 {
-    padding: 1%;
-    grid-column-start: 2;
-    grid-row-start: 6;
+#box5 {
+    padding: 5%;
     background-color: rgb(225, 228, 228);
-
 }
 
-.box6 {
-    padding: 1%;
-    grid-column-start: 2;
-    grid-row-start: 7;
-
+#box6{
+    padding: 5%;
 }
 
 main h3 {
@@ -210,15 +198,6 @@ p {
     font-size: 1.7rem;
 }
 
-#datosreg {
-    font-size: 1.3rem;
-    color: rgb(88, 88, 88);
-
-}
-
-li {
-    font-size: 1.7rem;
-}
 
 img{
     height: 83%;
@@ -272,15 +251,13 @@ footer a {
     color: white;
 }
 
-footer img {
-
+footer img{
     width: 30px;
     height: 25px;
 }
 
 #autor {
     grid-column-start: 2;
-
 }
 
 #inst {
