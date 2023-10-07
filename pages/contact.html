@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,61 +10,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
     <style>
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            main{
+                flex-direction: column;
+            }
+        }
+        .text-section,
+        .contact-section {
+            flex: 1;
+            padding: 20px;
+        }
 
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-}
+        .contact-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
-.text-section, .contact-section {
-    flex: 1;
-    padding: 20px;
-}
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
 
-.contact-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
+        label.checkbox-label {
+            display: flex;
+            align-items: center;
+        }
 
-input[type="text"], input[type="email"], input[type="tel"], textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
+        button {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
 
-label.checkbox-label {
-    display: flex;
-    align-items: center;
-}
-
-button {
-    background-color: #ff9900;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-button:hover {
-    background-color: #e68a00;
-}
-
+        button:hover {
+            background-color: #e68a00;
+        }
     </style>
     <link rel="stylesheet" href="../src/css/styles.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header_logo">
@@ -77,19 +85,19 @@ button:hover {
         </div>
         <nav class="navigation">
             <ul class="navList">
-                <li class="navItem"><a href="pages/contact.html">Contacto</a></li>
-                <li class="navItem"><a href="pages/reservas.html">Reservas</a></li>
-                <li class="navItem"><a href="pages/tarifas.html">Tarifas</a></li>
-                <li class="navItem"><a href="pages/login.html">Acceso</a></li>
+                <li class="navItem"><a href="../pages/contact.html">Contacto</a></li>
+                <li class="navItem"><a href="../pages/reservas.html">Reservas</a></li>
+                <li class="navItem"><a href="../pages/tarifas.html">Tarifas</a></li>
+                <li class="navItem"><a href="../pages/login.html">Acceso</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="text-section">
-            <p>En Parking Service trabajamos para usted. 
-            Con este breve formulario usted se comunica con nosotros, y a vuelta de mensaje
-            le daremos la información correspondiente a tarifas y demás servicios que ofrecemos</p>
+            <p>En Parking Service trabajamos para usted.
+                Con este breve formulario usted se comunica con nosotros, y a vuelta de mensaje
+                le daremos la información correspondiente a tarifas y demás servicios que ofrecemos</p>
         </section>
         <section class="contact-section">
             <h2>Formulario de Contacto</h2>
@@ -99,9 +107,9 @@ button:hover {
 
                 <label for="lastname">Apellidos:</label>
                 <input type="text" id="username" name="username" required>
-                
+
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>       
+                <input type="email" id="email" name="email" required>
 
                 <label for="phone">Teléfono:</label>
                 <input type="tel" id="phone" name="phone" required>
@@ -115,7 +123,7 @@ button:hover {
                     <option value="telefono">Teléfono</option>
                     <option value="whatsapp">WhatsApp</option>
                 </select>
-                
+
                 <label for="terminos">Acepto los términos y condiciones</label>
                 <input type="checkbox" id="terminos" name="terminos" required>
                 <br>
@@ -140,4 +148,5 @@ button:hover {
         </div>
     </footer>
 </body>
+
 </html>

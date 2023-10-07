@@ -1,198 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
+  <style>
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
 
+    .text-section,
+    .contact-section {
+      flex: 1;
+      padding: 20px;
+    }
 
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-}
+    .contact-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
 
-.text-section, .contact-section {
-    flex: 1;
-    padding: 20px;
-}
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
 
-.contact-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
+    label.checkbox-label {
+      display: flex;
+      align-items: center;
+    }
 
-input[type="text"], input[type="email"], input[type="tel"], textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-label.checkbox-label {
-    display: flex;
-    align-items: center;
-}
-
-button {
-    background-color: #ff9900;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-button:hover {
-    background-color: #e68a00;
-}
-
-
-/* CSS pra sistema de cajas de 3x3 con FLEX */
-.tarifas {
-  margin: 50px;
-  background-color: rgb(102, 102, 102);
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1
-}
-
-.orange-column {
-  background-color: rgb(131, 147, 221);
-  height: 250px;
-}
-
-.blue-column {
-  background-color: rgb(200, 227, 194);
-  height: 250px;
-}
-
-.green-column {
-  background-color: rgb(202, 206, 202);
-  height: 250px;
-}
-
-.double-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2
-}
-
-    </style>
-    <link rel="stylesheet" href="../src/css/styles.css">
+    button {
+      background-color: #ff9900;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    button:hover {
+      background-color: #e68a00;
+    }
+    /* CSS pra sistema de cajas de 3x3 con FLEX */
+    .tarifas {
+      margin: 50px;
+      background-color: rgb(102, 102, 102);
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1
+    }
+    .orange-column {
+      background-color: rgb(131, 147, 221);
+      height: 250px;
+    }
+    .blue-column {
+      background-color: rgb(200, 227, 194);
+      height: 250px;
+    }
+    .green-column {
+      background-color: rgb(202, 206, 202);
+      height: 250px;
+    }
+    .double-column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 2
+    }
+  </style>
+  <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html"><img src="../src/images/parking.jpg" alt="" class="logo"></a>
-        <div>
-            <h1>Parking Services</h1>
-            <h3>Su vehículo, nuestro activo más importante</h3>
-        </div>
-    </header>
+  <header class="header">
+    <a href="../index.html"><img src="../src/images/parking.jpg" alt="" class="logo"></a>
+    <div>
+      <h1>Parking Services</h1>
+      <h3>Su vehículo, nuestro activo más importante</h3>
+    </div>
+  </header>
+  <nav class="navigation">
+    <ul class="navList">
+      <li class="navItem"><a href="contact.html">Contacto</a></li>
+      <li class="navItem"><a href="reservas.html">Reservas</a></li>
+      <li class="navItem"><a href="tarifas.html">Tarifas</a></li>
+      <li class="navItem"><a href="login.html">Acceso</a></li>
+    </ul>
+  </nav>
 
-    <nav class="navigation">
-        <ul class="navList">
-
-            <li class="navItem"><a href="contact.html">Contacto</a></li>
-            <li class="navItem"><a href="reservas.html">Reservas</a></li>
-            <li class="navItem"><a href="tarifas.html">Tarifas</a></li>
-            <li class="navItem"><a href="login.html">Acceso</a></li>
-            <li class="navItem"><a href="cuenta.html">Mi cuenta</a></li>
-
-        </ul>
-    </nav>
-    
-    <div class='tarifas'>
-        <div class='row'>
-          <div class='column'>
-            <div class='orange-column'>
-                <img
-                src="../src/images/mensuales.jpg"
-                width="650"
-                height="400" />
-            </div>
-          </div>
-          <div class='column'>
-            <div class='blue-column'>
-              Descripcion y precios cocheras mensuales
-            </div>
-          </div>
-          <div class='column'>
-            <div class='green-column'>
-              Boton de booking mensuales
-            </div>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='column'>
-            <div class='green-column'>
-            Descripcion y precios cocheras semanales
-            </div>
-          </div>
-          <div class='column'>
-            <div class='orange-column'>
-            <img
-                src="../src/images/semanales.jpg"
-                width="650"
-                height="400" />
-            </div>
-          </div>
-          <div class='column'>
-            <div class='blue-column'>
-              Boton de booking semanales
-            </div>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='double-column'>
-            <div class='blue-column'>
-              Foto de referencia de cocheras para fin de semanas y espectaculos
-            </div>
-          </div>
-          <div class='column'>
-            Descripcion y precios para fin de semana y espectaculos
-          </div>
+  <div class='tarifas'>
+    <div class='row'>
+      <div class='column'>
+        <div class='orange-column'>
+          <img src="../src/images/mensuales.jpg" width="650" height="400" />
         </div>
       </div>
-    
-
-    <footer class="footer">
-
-        <a href="../pages/contactus.html" id="nos">Sobre Nosotros</a>
-        <a href="mailto:parkingservices@example.com" id="web">parkingservices@example.com</a>
-        <p id="autor">Author: ParkingServices.com</p>
-        <div id="link">
-            <a href="https://twitter.com" target="_blank" id="tw"><img src="../src/images/twblanco.png" ></a>
-            <a href="http://instagram.com" target="_blank" id="inst"><img src="../src/images/descarga-removebg-preview.png" alt=""></a>
+      <div class='column'>
+        <div class='blue-column'>
+          Descripcion y precios cocheras mensuales
         </div>
-       
-    </footer>
+      </div>
+      <div class='column'>
+        <div class='green-column'>
+          Boton de booking mensuales
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='column'>
+        <div class='green-column'>
+          Descripcion y precios cocheras semanales
+        </div>
+      </div>
+      <div class='column'>
+        <div class='orange-column'>
+          <img src="../src/images/semanales.jpg" width="650" height="400" />
+        </div>
+      </div>
+      <div class='column'>
+        <div class='blue-column'>
+          Boton de booking semanales
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='double-column'>
+        <div class='blue-column'>
+          Foto de referencia de cocheras para fin de semanas y espectaculos
+        </div>
+      </div>
+      <div class='column'>
+        Descripcion y precios para fin de semana y espectaculos
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <a href="../pages/contactus.html" id="nos">Sobre Nosotros</a>
+    <a href="mailto:parkingservices@example.com" id="web">parkingservices@example.com</a>
+    <p id="autor">Author: ParkingServices.com</p>
+    <div id="link">
+      <a href="https://twitter.com" target="_blank" id="tw"><img src="../src/images/twblanco.png"></a>
+      <a href="http://instagram.com" target="_blank" id="inst"><img src="../src/images/descarga-removebg-preview.png"
+          alt=""></a>
+    </div>
+  </footer>
 </body>
 </html>
