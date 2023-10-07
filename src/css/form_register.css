@@ -1,0 +1,29 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    gap: 5px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    font-size: 1.2rem; 
+    padding: 10px; 
+  }
+form button{
+    font-size: 1.2rem;
+}  
+main h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    background-color: cadetblue;
+}
+main p{
+    text-align: center;
+    margin: 5%;
+}
