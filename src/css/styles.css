@@ -164,11 +164,7 @@ footer a{
     color: #f2f2f2;
 }	
 
-.footer > div > a > img {
-    width: 10%;
-    height: 10%;
-    max-width: 100px;
-}
+
 
 @media (max-width: 800px) {
     .container {
