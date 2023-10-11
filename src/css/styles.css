@@ -15,6 +15,29 @@ body {
 main{
     flex-grow: 1;
 }
+.maquina-escribir {
+    display: block;
+    white-space: nowrap; /* los espacios en blanco no rompen la línea */
+    width: 16ch; /* el ancho será el número de caracteres que tiene nuestra línea */
+    animation: escribiendo 2s steps(16);
+    overflow: hidden;
+  }
+
+  .cursor{
+    animation: 0.6s parpadeo-cursor infinite;
+  }
+
+  @keyframes escribiendo {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes parpadeo-cursor {
+    50% {
+      opacity: 0;
+    }
+  }
 .header {
     width: 100%;
     padding: 5px;
@@ -24,7 +47,7 @@ main{
 .header_logo{
     display: flex;
     justify-content: left;
-    align-items: center; 
+    align-items: center;
     gap: 5%;
 }
 
@@ -35,8 +58,12 @@ main{
 }
 
 .logo:hover {
-    border: 2px solid blue;
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in-out;
 }
+.logo.fade-in {
+    opacity: 1;
+  }
 .navigation {
     width: 100%;
     height: 50px;
@@ -72,7 +99,7 @@ main{
 .box{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 .article > a  {
     display: flex;
@@ -82,7 +109,7 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 article > img {
     width: 100%;
@@ -128,7 +155,6 @@ article > iframe {
 main h3 {
     font-size: 1.7rem;
     color: blue;
-    
 }
 
 p {
@@ -142,8 +168,11 @@ p {
 
 
 #imgcuenta:hover {
-    border: 3px solid blue;
-    border-radius: 50px;
+    border: 1px solid cadetblue;
+    border-radius: 20%;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
+
 }
 
 .footer {
@@ -156,13 +185,13 @@ p {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 1.5rem;
-} 
+}
 
 footer a{
     font-size: 1.5rem;
     text-decoration: none;
     color: #f2f2f2;
-}	
+}
 
 
 
@@ -192,10 +221,10 @@ footer a{
         text-align: center;
     }
     footer a{
-        font-size: .7rem;
+        font-size: 1rem;
     }
     footer p{
-        font-size: .7rem;
+        font-size: 1rem;
     }
 }
 
@@ -207,7 +236,6 @@ footer a{
     .navList a{
         font-size: 1.5rem;
     }
- 
 }
 
 @media (min-width: 1280px) {
@@ -222,3 +250,5 @@ footer a{
         font-size: 2rem;
     }
 }
+
+
