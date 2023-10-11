@@ -2,9 +2,12 @@
 Group Repository #22 - Commission 23533 - Python Codo a Codo 2023
 
 ## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [About Us](#about-us)
+- [TP-GrupoPythonFrontend](#tp-grupopythonfrontend)
+  - [Table of Contents](#table-of-contents)
+  - [General Info](#general-info)
+  - [Screenshot](#screenshot)
+  - [Technologies](#technologies)
+  - [About Us](#about-us)
 
 ## General Info
 TP frontend repository of group 22, here we will have the different Frontend files using HTML5, CSS and JavaScript.<br>
@@ -12,6 +15,8 @@ TP frontend repository of group 22, here we will have the different Frontend fil
 
 ## Screenshot
 ![LogoHTML5](https://www.w3.org/html/logo/downloads/HTML5_Logo_128.png)
+![LogoCSS](src/images/css-3.png)
+![LogoJS](src/images/js.png)
 
 ## Technologies
 A list of technologies used within the project:
@@ -21,7 +26,7 @@ A list of technologies used within the project:
 
 ## About Us
 Development Team.
-> Claudio Rohr (claudiomr79 at gmail dot com) <br>
-> Diego Pozo (diegodpozo at hotmail dot com) <br>
-> Pablo Lombardi (lombapablo at yahoo dot es) <br>
-> Jhon Harold Hincapie (jhonharold.hincapie at gmail dot com)
+> Claudio Rohr (claudiomr79@gmail.com) <br>
+> Diego Pozo (diegodpozo@hotmail.com) <br>
+> Pablo Lombardi (lombapablo@yahoo.es) <br>
+> Jhon Harold Hincapie (jhonharold.hincapie@gmail.com)
