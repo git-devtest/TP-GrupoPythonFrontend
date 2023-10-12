@@ -13,78 +13,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
-    <style>
-        main {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-        @media screen and (max-width: 768px) {
-            main{
-                flex-direction: column;
-            }
-        }
-        .text-section,
-        .contact-section {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .contact-section h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        label.checkbox-label {
-            display: flex;
-            align-items: center;
-        }
-
-        button {
-            background-color: #ff9900;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        button:hover {
-            background-color: #e68a00;
-        }
-   
-    </style>
     <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/contactus.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header_logo">
             <div>
-                <a href="../index.html"><img src="../src/images/parking.jpg" alt="" class="logo"></a>
+                <a href="../index.html"><img src="../src/images/parking.jpg" alt="logo" class="logo"></a>
             </div>
             <div>
-                <h1>Parking Services</h1>
+                <h1 class="maquina-escribir">Parking Services<span class="cursor">|</span></h1>
                 <h3>Su vehículo, nuestro activo más importante</h3>
             </div>
         </div>
@@ -140,14 +80,14 @@
 
     <footer class="footer">
         <div>
-            <a href="pages/about.html">Sobre Nosotros</a>
+            <a href="../pages/about.html">Sobre Nosotros</a>
         </div>
         <div>
             <a href="mailto:parkingservices@example.com">parkingservices@example.com</a>
             <p>Author: ParkingServices.com</p>
         </div>
         <div id="redes">
-            <a href="https://twitter.com" target="_blank">   <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
             <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>

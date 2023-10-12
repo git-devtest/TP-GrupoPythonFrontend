@@ -1,60 +1,32 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #f2f2f2;
+    min-height: 100vh;
+    margin: 0;
 }
-
-header, footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-}
-
-main {
+main{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-height: 75vh;
-}
-
-.image-section, .login-section {
-    flex: 1;
-    padding: 20px;
-}
-
-.image-section img {
-    max-width: 50%;
-    height: auto;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.login-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
 }
 
 input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 button {
     background-color: #ff9900;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -63,40 +35,4 @@ button {
 button:hover {
     background-color: #e68a00;
 }
-.footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    background-color: #1d1d1d;
-    color: #f2f2f2;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    font-size: 1.5rem;
-} 
 
-footer a{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #f2f2f2;
-}	
-
-.footer > div > a > img {
-    width: 10%;
-    height: 10%;
-    max-width: 100px;
-}
-#autor{
-    grid-column-start: 2;
-    
-}
-
-#inst{
- padding: 4%;
- 
-}
-
-#link{
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
