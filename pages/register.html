@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="stylesheet" href="../src/css/form_register.css">
+    <script defer src="../src/js/scripts.js"></script>
 </head>
 <body>
     <header class="header">
@@ -46,18 +47,19 @@
                - Promociones Exclusivas: Mantente informado sobre ofertas y descuentos especiales para miembros.</p>
                <p> ¡Regístrate ahora y comienza a disfrutar de la comodidad de Parking Services!
                 </p>
-            <form action="procesar_registro.php" method="POST">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre"  required>
-          
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-          
-              <label for="password">Contraseña:</label>
-              <input type="password" id="password" name="password" required>
-          
-              <button type="submit">Registrarse</button>
-            </form>
+            
+                <form id="formulario">
+                    <label for="nombre_usuario">Nombre de usuario:</label>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario"><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="password" name="password"><br>
+                    
+                    <input type="submit" value="Registrarse">
+                  </form>
           </main>
     </main>
     <footer class="footer">
