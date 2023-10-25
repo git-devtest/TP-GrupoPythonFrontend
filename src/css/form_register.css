@@ -13,9 +13,15 @@ input[type="text"], input[type="email"], input[type="password"] {
     font-size: 1.2rem; 
     padding: 10px; 
   }
-form button{
-    font-size: 1.2rem;
-}  
+input[type="submit"] {
+    font-size: 1.2rem; 
+    padding: 10px; 
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } 
 main h1{
     display: flex;
     justify-content: center;
