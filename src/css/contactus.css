@@ -43,17 +43,13 @@
             align-items: center;
         }
 
-        button {
-            background-color: #ff9900;
+        input[type="submit"] {
+            font-size: 1.2rem; 
+            padding: 10px; 
+            background-color: cadetblue;
             color: white;
-            padding: 10px 20px;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 18px;
-        }
-
-        button:hover {
-            background-color: #e68a00;
-        }
+          }
    
