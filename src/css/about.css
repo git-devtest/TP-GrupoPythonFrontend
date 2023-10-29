@@ -1,0 +1,58 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+article{
+    display: flex;
+    align-items: start;
+    margin: 10vw;
+    width: 50vw;
+}
+#fotoart {
+    width: 90px;
+    height: 90px;
+}
+
+#articulo {
+    margin-bottom: 70px;
+
+}
+
+#tambienvendemos {
+    left: 800px;
+}
+
+#intgrup {
+
+    background-color: cadetblue
+}
+
+#grupo {
+    top: 200px;
+    left: 260px;
+
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    article{
+        display: flex;
+        justify-content: center;
+        align-items: normal;
+        margin: 10vw;
+        padding: 10px;
+        width: 80vw;
+    }
+   
+    
+}
