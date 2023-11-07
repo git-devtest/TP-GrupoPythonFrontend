@@ -53,4 +53,7 @@
             border-radius: 5px;
             cursor: pointer;
           }
-   
+          nav {
+            position: sticky;
+            top: 0;
+        }

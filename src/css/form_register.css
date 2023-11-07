@@ -33,3 +33,7 @@ main p{
     text-align: center;
     margin: 5%;
 }
+nav {
+  position: sticky;
+  top: 0;
+}
