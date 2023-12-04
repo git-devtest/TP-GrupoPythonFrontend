@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE TAREAS</title>
+</head>
+<head>
+    {% if usuarioactivo %}
+        <p style="color:greenyellow">URUARIO ACTIVO</p>
+    {% else %}
+        <p style="color:red">URUARIO INACTIVO</p>
+    {% endif %}
+
+</head>
+<body>
+    <H1>ACA VA LA LISTA DE TAREAS</H1>
+    <h2>Bienvenido {{usuario}}</h2>
+    <article>
+       <ul>
+            {% for tarea in tareas %}
+            
+                <li>{{tarea}}</li>
+            {% empty %}
+               <p>NO HAY TAREAS</p>
+            {% endfor %}
+
+        </ul>
+
+    </article> 
+    
+</body>
+</html>
